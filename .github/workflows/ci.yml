@@ -85,6 +85,9 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
+      - name: Set up DB
+        run: bin/rails db:merge
+
       - name: Run tests
         env:
           RAILS_ENV: test
