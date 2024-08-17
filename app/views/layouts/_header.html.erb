@@ -1,0 +1,21 @@
+<header>
+    <div class="container">
+        <h1>ChatPlus</h1>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav-menu">
+            <%= link_to "Home", root_path %>
+            <%= link_to "Help", help_path %>
+            <%= link_to "Login", "#" %>
+        </nav>
+    </div>
+</header>
+<script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        var navMenu = document.getElementById('nav-menu');
+        navMenu.classList.toggle('active');
+    });
+</script>
