@@ -1,0 +1,204 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background: #e3b0c3;
+  color: #333;
+  padding: 15px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-left: 20px;
+  display: inline;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6b81;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.hero {
+  background: #f6d1e1;
+  color: #575757;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn-signup {
+  background: #ff6b81;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.btn-signup:hover {
+  background: #e03b4c;
+}
+
+.features {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  display: inline-block;
+  width: 30%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-item .icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.feature-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5em;
+  }
+
+  nav {
+      float: none;
+      text-align: center;
+      margin: 0;
+  }
+
+  nav a {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  nav#nav-menu {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 60px;
+      background: #e3b0c3;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      z-index: 10
+  }
+
+  nav#nav-menu.active {
+      display: block;
+  }
+
+  .feature-item {
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.2em;
+  }
+
+  .hero h2 {
+      font-size: 1.8em;
+  }
+
+  .hero p {
+      font-size: 1em;
+  }
+
+  .btn-signup {
+      font-size: 1em;
+      padding: 12px 24px;
+  }
+
+  .feature-item {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
